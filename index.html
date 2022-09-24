@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEXBOX</title>
+
+    <style>
+        body, nav, header, main, #contenedor, footer{width: 100%;}
+
+        body{
+            height: auto;
+            margin: 0;
+            font-family: "Arial";
+        }
+
+        nav{
+            height: 50px;
+            background-color: rgb(0, 0, 0);
+        }
+
+        header{
+            height: 400px;
+            background-color: #086A87;
+            background-image: url(imagenes/banner.jpg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+
+            position: relative;
+        }
+
+        header div{
+            width: 216px;
+            height: 137px;
+
+            position:absolute;
+            top:115px;
+            left:70px;
+        }
+
+        header div img{
+            width: 100%;
+            height: auto;
+        }
+
+        main{
+            height: 550px;
+            background-color: #ccc;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        h1{margin-top: 0; text-align: center;}
+
+        #contenedor{
+            height: 450px;
+            /*background-color: cornflowerblue;*/
+            display:flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .box{
+            width: 32%;
+            height: 425px;
+            background-color: #086A87;
+            color: white;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+
+        h3{text-align: center; margin-top: 0;}
+
+        footer{height: 450px; background-color: #000; padding-top: 30px;}
+
+        footer section{
+            width: 600px;
+            height: auto;
+            border:1px solid #fff;
+            margin: auto;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+
+        footer section address{
+            width: 100%;
+            height: auto;
+            color: rgb(255,255,255);
+            font-size: 18px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <nav></nav>
+    <header>
+        <div>
+            <img src="imagenes/logo.jpg" alt="Logo de HomeWork">
+        </div>
+    </header>
+
+    <main role="main">
+        <h1>Propiedad FlexBox</h1>
+    
+    <section id="contenedor">
+        <div class="box">
+            <h3>Video con Iframe</h3>
+
+            <iframe style="width: 100%; height:300px;" src="https://www.youtube.com/embed/2KGtXzIb8l8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+
+
+
+
+
+        <div class="box">Caja 2</div>
+        <div class="box">Caja 3</div>
+    </section>    
+    </main>
+
+    <footer>
+        <section>
+            <address>
+                Av. San Martín 1974 - C.A.B.A.
+                <br>
+                E-mail: info@homework.com.ar - Teléfono: (011) 4444-1234
+            </address>
+
+            <hr>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7976.729655024831!2d-58.45810940376367!3d-34.60639022996283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca0413993e65%3A0xf3770b9a0a13bc16!2sAv.%20San%20Mart%C3%ADn%201974%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1663971506700!5m2!1ses-419!2sar" style="width:100%; height: 340px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+
+            <!--
+            <iframe src="https://www.infobae.com" frameborder="1" width="100%" height="300"></iframe>
+            -->
+        </section>
+    </footer>
+    
+</body>
+</html>
